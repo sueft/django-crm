@@ -9,8 +9,6 @@ https://docs.djangoproject.com/en/3.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
-import django_heroku
-django_heroku.settings(locals())
 import os
 from pathlib import Path
 
@@ -27,7 +25,6 @@ SECRET_KEY = 'django-insecure-2wkbp+@c8!qgr*k1vivm4hz-+5-jli2^b(t4ho#*yn8qss6zjw
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
-ALLOWED_HOSTS = ['vendor.herokuapp.com']
 ALLOWED_HOSTS = ['vendor.onrender.com']
 
 

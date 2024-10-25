@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+<h1>create products</h1>
+<form action="" method="post">
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" class="btn btn-warning" value="create">
+    <a href="{% url 'index' %}"  class="btn btn-secondary">back</a>
+</form>
+
+{% endblock %}
